@@ -1,0 +1,27 @@
+body {
+    font-size: 0.9em;
+    background-color: #ecf0f1;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 6px 30px rgba(0, 14, 77, 0.10);
+}
+
+#header {
+    font-size: 2em;
+}
+
+#submit-btn {
+    font-size: 0.9em;
+}
+
+/* MEDIA QUERIES */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}

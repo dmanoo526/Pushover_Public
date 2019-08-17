@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body class="mt-5">
+<div class="container p-5">
+
+    <h1 id="header">Report a bug</h1>
+
+    <!-- FORM -->
+    <form method="POST" action="report">
+        <!-- EMAIL ADDRESS -->
+        <div class="form-row">
+            <div class="form-group col">
+                <label for="email">Contact email </label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Please write your contact email here." required>
+            </div>
+        </div>
+
+        <!-- SUBJECT -->
+        <div class="form-group">
+            <label for="subject">Subject </label>
+        <select class="form-control" name="subject" id ="subject" required>
+            <option>Select Option</option>
+            <option>Website issue</option>
+            <option>Account issue</option>
+            <option>Graphical issue</option>
+            <option>Offensive content</option>
+            <option>Other</option>
+        </select>
+        </div>
+
+        <!-- ISSUE BOX -->
+        <div class="form-row">
+            <label for="issue">Issue/Bug </label>
+            <input type="text" name="issue" class="form-control" id="issue" placeholder="Please summarize your issue in this box."required>
+        </div>
+        <br>
+
+        <!-- SEND BTN -->
+        <div class="form-row">
+            <div class="form-group col">
+                <button id="send-btn" type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+
+        <hr>
+    <!-- LINK TO SIGNUP -->
+    <div class="form-row">
+        <div class="form-group col">
+            <!-- readd "./index.html" -->
+            <a href="./">Back To Sign Up</a>
+        </div>
+    </div>
+    </form>
+</div>
+<script type="text/javascript" src="./scripts/report.js"></script>
+</body>
+
+</html>

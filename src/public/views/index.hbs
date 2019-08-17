@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body class="mt-5">
+    <div class="container p-5">
+        <!-- HEADER -->
+        <div class="row">
+            <div class="col mb-4">
+                <h1 id="header">Sign up for Pushover</h1>
+            </div>
+        </div>
+        <!-- FORM -->
+        <form method="POST" action="/signup">
+            <!-- EMAIL ADDRESS -->
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" class="form-control" id="email" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <!-- PASSWORD -->
+                <div class="form-group col">
+                    <label for="password">Password</label>
+                    <input type="password" name="pass" class="form-control" id="password" required>
+                </div>
+                <!-- CONFIRM PASSWORD -->
+                <div class="form-group col">
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" name="confirm-pass" class="form-control" id="confirm-password" required>
+                </div>
+            </div>
+            <!-- TERMS OF SERVICE -->
+            <div class="form-group row">
+                <div class="col">
+                    <div class="form-check">
+                        <input type="checkbox" name="tos" class="form-check-input" id="tos">
+                        <label class="form-check-label" for="tos">I agree to the Terms of Use and Privacy Policy<label>
+                    </div>
+                </div>
+            </div>
+            <!-- SIGNUP BTN -->
+            <div class="form-row">
+                <div class="form-group col">
+                    <button id="signup-btn" type="submit" class="btn btn-primary">Sign up</button>
+                </div>
+                <div class="col mt-1">
+                    <i id="verify">Your passwords don't match, or you forgot to input a field. </i>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <!-- LINK TO LOGIN -->
+        <div class="row">
+            <div class="col mt-1">
+                <a href="/login">I already have an account</a>
+            </div>
+            <!--             <div class="col mt-1">
+                <a href="/help">Help</a>
+            </div>
+            <div class="col mt-1">
+                <a href="/policies">Privacy Policy/Terms of Service</a>
+            </div>
+            <div class="col mt-1">
+                <a href="/report">Report Issue</a>
+            </div>
+            <div class="col mt-1">
+                <a href="/aboutUs">About Us</a>
+            </div> -->
+            <div class="col mt-1">
+                <a href="/guide">Guide</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+</body>
+
+</html>

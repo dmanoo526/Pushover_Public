@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body class="mt-5">
+    <div class="container p-5">
+        <!-- HEADER -->
+        <div class="row">
+            <div class="col mb-4">
+                <h1 id="header">Log in to Pushover</h1>
+            </div>
+        </div>
+        <!-- FORM -->
+        <form method="POST" action="/login">
+            <!-- EMAIL ADDRESS -->
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" class="form-control" id="email" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <!-- PASSWORD -->
+                <div class="form-group col">
+                    <label for="password">Password</label>
+                    <input type="password" name="pass" class="form-control" id="password" required>
+                </div>
+            </div>
+            <!-- LOGIN BTN -->
+            <div class="form-row">
+                <div class="form-group col">
+                    <button id="login-btn" type="submit" class="btn btn-primary" onclick="login()">Log in</button>
+                </div>
+                <div class="col mt-1">
+                    <!-- ADD FUNCTIONALITY" -->
+                    <a href="./">Forgot Password</a>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <!-- LINK TO SIGNUP -->
+        <div class="row">
+            <div class="col mt-1">
+                <a href="/">I don't have an account</a>
+            </div>
+            <div class="col mt-1">
+                <a href="/help">Help</a>
+            </div>
+            <div class="col mt-1">
+                <a href="/tos">Privacy Policy</a>
+            </div>
+            <div class="col mt-1">
+                <a href="/report">Report Issue</a>
+            </div>
+            <div class="col mt-1">
+                <a href="/aboutUs">About Us</a>
+            </div>
+            <div class="col mt-1">
+                <a href="/guide">Guide</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
